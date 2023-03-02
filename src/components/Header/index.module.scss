@@ -3,11 +3,12 @@
         position: sticky;
         top: 0px;
         z-index: 50;
-        display: grid;
-        grid-template-columns: 3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         box-shadow: 10px 10px 10px #e2e1e1ab;
         background-color: white;
-        padding-top: 1.25rem;
+        padding-top: 1.15rem;
         padding-bottom: 1.25rem;
         padding-left: 1.25rem;
         padding-right: 1.25rem;
@@ -25,21 +26,80 @@
 
     }
     &__search {
-        input {
         display: flex;
         align-items: center;
-        border-width: 2px;
+        border: .5px solid grey;
         border-radius: 9999px;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        max-height: 30px;
+        input {
+            flex-grow: 1;
+            padding-left: 10px;
+            background: transparent;
+            border: none;
+            outline: none;
         }
     }
+    &__search:hover {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
     &__searchicon {
-        height: 20px;
+        overflow: hidden;
+        height: 16px;
+        display: inline-flex;
         background-color: rgb(247, 49, 49);
         color: white;
         border-radius: 9999px;
         padding: 8px;
+        margin-right: 4px;
         cursor: pointer;
+    }
+    &__Menu {
+        display: flex;
+        margin-left: 8px;
+        margin-right: 8px;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        cursor: pointer;
+    }
+    &__GlobeIcon {
+        height: 20px;
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 10px;
+        border-radius: 9999px;
+        cursor: pointer;
+    }
+    &__GlobeIcon:hover {
+        background-color: rgb(216, 213, 213);
+    }
+    &__MenuIcon {
+        height: 2em ;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    &__UserCircleIcon {
+        height: 2em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    &__Profil {
+        display: flex;
+        align-items: center;
+        border: 2px solid grey;
+        border-radius: 9999px;
+    }
+    &__Text {
+        overflow: hidden;
+        display: inline-block;
+        padding: 10px;
+        border-radius: 9999px;
+        cursor: pointer;
+    }
+    &__Text:hover {
+        background-color: rgb(216, 213, 213);
     }
 }
