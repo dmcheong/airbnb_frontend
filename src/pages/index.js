@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Filter from "../components/Filter";
-import Modal from "../components/Modal";
 import PlaceGrid from "../components/PlaceGrid/";
 
 
@@ -25,7 +24,7 @@ export default function Home() {
             <Header/>
 
             {/*<Filter />*/}
-
+            
             <PlaceGrid places={places} />
 
         </main>
